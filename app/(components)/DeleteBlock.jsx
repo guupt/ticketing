@@ -2,7 +2,7 @@
 
 import { faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const DeleteBlock = ({ id }) => {
   const router = useRouter();

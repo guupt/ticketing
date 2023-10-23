@@ -23,7 +23,7 @@ export async function DELETE(red, { params }) {
     return NextResponse.json({ message: "Error", error }, { status: 500 });
   }
 }
-export async function PUT(red, { params }) {
+export async function PUT(req, { params }) {
   try {
     const { id } = params;
     const body = await req.json();

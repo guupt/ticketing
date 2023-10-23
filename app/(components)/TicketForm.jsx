@@ -20,7 +20,7 @@ const TicketForm = ({ ticket }) => {
     e.preventDefault();
 
     if (EDITMODE) {
-      const res = await fetch("/api/Tickets", {
+      const res = await fetch(`/api/Tickets/${ticket._id}`, {
         method: "PUT",
         body: JSON.stringify({ formData }),
         "content-type": "application/json",

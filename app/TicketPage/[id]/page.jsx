@@ -1,7 +1,7 @@
 const { default: TicketForm } = require("@/app/(components)/TicketForm");
 
 const getTicketById = async (id) => {
-  const res = await fetch(`http>;;localhost:3000/api/Tickets/${id}`, {
+  const res = await fetch(`http://localhost:3000/api/Tickets/${id}`, {
     cache: "no-store",
   });
 
